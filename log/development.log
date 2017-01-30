@@ -1119,3 +1119,455 @@ Processing by ProjectsController#show as HTML
 Completed 200 OK in 75ms (Views: 68.1ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/projects/4" for 127.0.0.1 at 2017-01-29 23:47:13 -0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered collection of tasks/_task.html.haml [4 times] (13.3ms)
+  Rendered projects/show.html.erb within layouts/application (34.0ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 2.2ms)
+
+
+  
+SyntaxError (/Users/andreleoni/Documents/RubyProjects/play-tasks/app/views/tasks/_task.html.haml:20: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/andreleoni/Documents/RubyProjects/play-tasks/app/views/tasks/_task.html.haml:23: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/tasks/_task.html.haml:20: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/tasks/_task.html.haml:23: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/projects/show.html.erb:14:in `_app_views_projects_show_html_erb___586687505785426751_70237658151280'
+  Rendering /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.8ms)
+  Rendering /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (116.6ms)
+Started GET "/projects/4" for 127.0.0.1 at 2017-01-29 23:47:47 -0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered collection of tasks/_task.html.haml [4 times] (4.0ms)
+  Rendered projects/show.html.erb within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/Users/andreleoni/Documents/RubyProjects/play-tasks/app/views/tasks/_task.html.haml:20: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/andreleoni/Documents/RubyProjects/play-tasks/app/views/tasks/_task.html.haml:23: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/tasks/_task.html.haml:20: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/tasks/_task.html.haml:23: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/projects/show.html.erb:14:in `_app_views_projects_show_html_erb___586687505785426751_70237658229480'
+  Rendering /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.3ms)
+  Rendering /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendering /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (116.5ms)
+Started GET "/projects/4" for 127.0.0.1 at 2017-01-29 23:48:05 -0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered collection of tasks/_task.html.haml [4 times] (16.2ms)
+  Rendered projects/show.html.erb within layouts/application (21.2ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `completed?' for #<Task:0x007fc2fca52de8>
+Did you mean?  completed_at?
+               completed_at):
+    1: .row.clearfix
+    2: 	- if task.completed?
+    3: 		.completed
+    4: 			= link_to "Mark As Complete", complete_project_task_path(@project, task.id), method: :patch
+    5: 		.task
+  
+app/views/tasks/_task.html.haml:2:in `_app_views_tasks__task_html_haml___3975615193460574109_70237719529620'
+app/views/projects/show.html.erb:14:in `_app_views_projects_show_html_erb___586687505785426751_70237722588660'
+  Rendering /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (24.5ms)
+  Rendering /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (139.1ms)
+Started GET "/projects/4" for 127.0.0.1 at 2017-01-29 23:48:32 -0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered collection of tasks/_task.html.haml [4 times] (5.5ms)
+  Rendered tasks/_form.html.haml (9.2ms)
+  Rendered projects/show.html.erb within layouts/application (39.3ms)
+Completed 200 OK in 95ms (Views: 78.9ms | ActiveRecord: 2.0ms)
+
+
+Started PATCH "/projects/4/tasks/3/complete" for 127.0.0.1 at 2017-01-29 23:48:42 -0200
+Processing by TasksController#complete as HTML
+  Parameters: {"authenticity_token"=>"XznIhBemTEA62lQd/hWiZDrLVpnAY1CyVf/tAGVPnH391DXTNrwR+wZSb6AoJo++1t3VY2qAwW7bHK94ZKpYfg==", "project_id"=>"4", "id"=>"3"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ? AND "tasks"."id" = ? LIMIT ?[0m  [["project_id", 4], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "tasks" SET "completed_at" = ?, "updated_at" = ? WHERE "tasks"."id" = ?[0m  [["completed_at", 2017-01-30 01:48:42 UTC], ["updated_at", 2017-01-30 01:48:42 UTC], ["id", 3]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/projects/4
+Completed 302 Found in 15ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/projects/4" for 127.0.0.1 at 2017-01-29 23:48:42 -0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered collection of tasks/_task.html.haml [4 times] (6.0ms)
+  Rendered tasks/_form.html.haml (4.6ms)
+  Rendered projects/show.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 78ms (Views: 73.7ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/projects/4/tasks/2/complete" for 127.0.0.1 at 2017-01-29 23:48:46 -0200
+Processing by TasksController#complete as HTML
+  Parameters: {"authenticity_token"=>"mYP89lOaop9VbMGlzFesvpnlX3Hq0fXKPQimR+km7O47bgGhcoD/JGnk+hgaZIFkdfPci0AyZBaz6+Q/6MMo7Q==", "project_id"=>"4", "id"=>"2"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ? AND "tasks"."id" = ? LIMIT ?[0m  [["project_id", 4], ["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[33mUPDATE "tasks" SET "completed_at" = ?, "updated_at" = ? WHERE "tasks"."id" = ?[0m  [["completed_at", 2017-01-30 01:48:46 UTC], ["updated_at", 2017-01-30 01:48:46 UTC], ["id", 2]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/projects/4
+Completed 302 Found in 18ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/projects/4" for 127.0.0.1 at 2017-01-29 23:48:46 -0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered collection of tasks/_task.html.haml [4 times] (11.2ms)
+  Rendered tasks/_form.html.haml (7.6ms)
+  Rendered projects/show.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 103ms (Views: 97.6ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/projects/4/tasks/3/complete" for 127.0.0.1 at 2017-01-29 23:48:49 -0200
+Processing by TasksController#complete as HTML
+  Parameters: {"authenticity_token"=>"LnDc72iE4LHRN4sqgWdW/Mp32QVGvLHY12nK4N6tEv6MnSG4SZ69Cu2/sJdXVHsmJmFa/+xfIARZioiY30jW/Q==", "project_id"=>"4", "id"=>"3"}
+  [1m[36mProject Load (1.9ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ? AND "tasks"."id" = ? LIMIT ?[0m  [["project_id", 4], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "tasks" SET "completed_at" = ?, "updated_at" = ? WHERE "tasks"."id" = ?[0m  [["completed_at", 2017-01-30 01:48:49 UTC], ["updated_at", 2017-01-30 01:48:49 UTC], ["id", 3]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/projects/4
+Completed 302 Found in 14ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/projects/4" for 127.0.0.1 at 2017-01-29 23:48:49 -0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered collection of tasks/_task.html.haml [4 times] (5.9ms)
+  Rendered tasks/_form.html.haml (4.9ms)
+  Rendered projects/show.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 72ms (Views: 68.3ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/projects/4/tasks/2" for 127.0.0.1 at 2017-01-29 23:48:53 -0200
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NpxlPJ8YWyR7wfbho7gKtIjpwb1b+UTIZifPAU3YAk2UcZhrvgIGn0dJzVx1iyduZP9CR/Ea1RToxI15TD3GTg==", "project_id"=>"4", "id"=>"2"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ? AND "tasks"."id" = ? LIMIT ?[0m  [["project_id", 4], ["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 2]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/projects/4
+Completed 302 Found in 16ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/projects/4" for 127.0.0.1 at 2017-01-29 23:48:53 -0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered collection of tasks/_task.html.haml [3 times] (13.0ms)
+  Rendered tasks/_form.html.haml (4.6ms)
+  Rendered projects/show.html.erb within layouts/application (35.1ms)
+Completed 200 OK in 110ms (Views: 101.7ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/projects/4/tasks/4/complete" for 127.0.0.1 at 2017-01-29 23:48:55 -0200
+Processing by TasksController#complete as HTML
+  Parameters: {"authenticity_token"=>"WLDRMQ8gUDsr4SCWNjwYxY8bvXQv5LE5iblGH9Tujqb6XSxmLjoNgBdpGyvgDzUfYw0+joUHIOUHWgRn1QtKpQ==", "project_id"=>"4", "id"=>"4"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ? AND "tasks"."id" = ? LIMIT ?[0m  [["project_id", 4], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "tasks" SET "completed_at" = ?, "updated_at" = ? WHERE "tasks"."id" = ?[0m  [["completed_at", 2017-01-30 01:48:55 UTC], ["updated_at", 2017-01-30 01:48:55 UTC], ["id", 4]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/projects/4
+Completed 302 Found in 15ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/projects/4" for 127.0.0.1 at 2017-01-29 23:48:55 -0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered collection of tasks/_task.html.haml [3 times] (5.1ms)
+  Rendered tasks/_form.html.haml (4.2ms)
+  Rendered projects/show.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 60ms (Views: 55.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects/4" for 127.0.0.1 at 2017-01-29 23:48:56 -0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered collection of tasks/_task.html.haml [3 times] (5.4ms)
+  Rendered tasks/_form.html.haml (7.3ms)
+  Rendered projects/show.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 83ms (Views: 75.0ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/projects/4/tasks/3/complete" for 127.0.0.1 at 2017-01-29 23:49:24 -0200
+Processing by TasksController#complete as HTML
+  Parameters: {"authenticity_token"=>"+PI6cVDEeuILnDSpMWmWF/6XmkwDjKqqqGbiQtHDFOFaH8cmcd4nWTcUDxTnWrvNEoEZtqlvO3YmhaA60CbQ4g==", "project_id"=>"4", "id"=>"3"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ? AND "tasks"."id" = ? LIMIT ?[0m  [["project_id", 4], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "tasks" SET "completed_at" = ?, "updated_at" = ? WHERE "tasks"."id" = ?[0m  [["completed_at", 2017-01-30 01:49:24 UTC], ["updated_at", 2017-01-30 01:49:24 UTC], ["id", 3]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/projects/4
+Completed 302 Found in 12ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/projects/4" for 127.0.0.1 at 2017-01-29 23:49:24 -0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered collection of tasks/_task.html.haml [3 times] (4.3ms)
+  Rendered tasks/_form.html.haml (4.9ms)
+  Rendered projects/show.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 70ms (Views: 66.2ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/projects/4/tasks/4/complete" for 127.0.0.1 at 2017-01-29 23:49:27 -0200
+Processing by TasksController#complete as HTML
+  Parameters: {"authenticity_token"=>"1YBS+lGAaakwBfua1rl3Wv7WFjC+ctpfcc09H0ELb5l3ba+tcJo0EgyNwCcAilqAEsCVyhSRS4P/Ln9nQO6rmg==", "project_id"=>"4", "id"=>"4"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ? AND "tasks"."id" = ? LIMIT ?[0m  [["project_id", 4], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "tasks" SET "completed_at" = ?, "updated_at" = ? WHERE "tasks"."id" = ?[0m  [["completed_at", 2017-01-30 01:49:27 UTC], ["updated_at", 2017-01-30 01:49:27 UTC], ["id", 4]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/projects/4
+Completed 302 Found in 24ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/projects/4" for 127.0.0.1 at 2017-01-29 23:49:27 -0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered collection of tasks/_task.html.haml [3 times] (10.8ms)
+  Rendered tasks/_form.html.haml (13.5ms)
+  Rendered projects/show.html.erb within layouts/application (40.2ms)
+Completed 200 OK in 139ms (Views: 134.3ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/projects/4/tasks/5/complete" for 127.0.0.1 at 2017-01-29 23:49:29 -0200
+Processing by TasksController#complete as HTML
+  Parameters: {"authenticity_token"=>"78Mf/ZYMVm2bUgpDap3ImFrNrjOjjHEB9guMjz0YxyNNLuKqtxYL1qfaMf68ruVCttstyQlv4N146M73PP0DIA==", "project_id"=>"4", "id"=>"5"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ? AND "tasks"."id" = ? LIMIT ?[0m  [["project_id", 4], ["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "tasks" SET "completed_at" = ?, "updated_at" = ? WHERE "tasks"."id" = ?[0m  [["completed_at", 2017-01-30 01:49:29 UTC], ["updated_at", 2017-01-30 01:49:29 UTC], ["id", 5]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/projects/4
+Completed 302 Found in 15ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/projects/4" for 127.0.0.1 at 2017-01-29 23:49:29 -0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered collection of tasks/_task.html.haml [3 times] (5.0ms)
+  Rendered tasks/_form.html.haml (6.1ms)
+  Rendered projects/show.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 76ms (Views: 68.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/projects/4" for 127.0.0.1 at 2017-01-29 23:49:31 -0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered collection of tasks/_task.html.haml [3 times] (3.8ms)
+  Rendered tasks/_form.html.haml (3.3ms)
+  Rendered projects/show.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 49ms (Views: 44.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/4" for 127.0.0.1 at 2017-01-29 23:49:40 -0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered collection of tasks/_task.html.haml [3 times] (4.0ms)
+  Rendered tasks/_form.html.haml (4.1ms)
+  Rendered projects/show.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 74ms (Views: 57.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/projects/4" for 127.0.0.1 at 2017-01-29 23:50:59 -0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered collection of tasks/_task.html.haml [3 times] (1.8ms)
+  Rendered projects/show.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (Got "else" with no preceding "if"):
+    13: 	.trash
+    14: 		= link_to "Delete", project_task_path(@project, task.id), method: "delete", data: { confirm: "Are you sure?" }
+    15: 	
+    16: 	- else
+    17: 		.completed
+    18: 			= link_to "Mark As Complete", complete_project_task_path(@project, task.id), method: :patch
+    19: 		.task
+  
+app/views/tasks/_task.html.haml:16
+app/views/projects/show.html.erb:14:in `_app_views_projects_show_html_erb___586687505785426751_70237654090540'
+  Rendering /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.6ms)
+  Rendering /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/andreleoni/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (105.8ms)
+Started GET "/projects/4" for 127.0.0.1 at 2017-01-29 23:51:05 -0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered collection of tasks/_task.html.haml [3 times] (8.8ms)
+  Rendered tasks/_form.html.haml (6.1ms)
+  Rendered projects/show.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 101ms (Views: 77.8ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/projects/4/tasks/4/complete" for 127.0.0.1 at 2017-01-29 23:51:07 -0200
+Processing by TasksController#complete as HTML
+  Parameters: {"authenticity_token"=>"15K6DbbRMBnJTz6s6KROnZaNLvRljMwRq75i6VEOv6p1f0dal8ttovXHBRE+l2NHeputDs9vXc0lXSCRUOt7qQ==", "project_id"=>"4", "id"=>"4"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ? AND "tasks"."id" = ? LIMIT ?[0m  [["project_id", 4], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "tasks" SET "completed_at" = ?, "updated_at" = ? WHERE "tasks"."id" = ?[0m  [["completed_at", 2017-01-30 01:51:07 UTC], ["updated_at", 2017-01-30 01:51:07 UTC], ["id", 4]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/projects/4
+Completed 302 Found in 15ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/projects/4" for 127.0.0.1 at 2017-01-29 23:51:07 -0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered collection of tasks/_task.html.haml [3 times] (5.3ms)
+  Rendered tasks/_form.html.haml (9.8ms)
+  Rendered projects/show.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 109ms (Views: 104.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects/4" for 127.0.0.1 at 2017-01-29 23:51:13 -0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered collection of tasks/_task.html.haml [3 times] (4.5ms)
+  Rendered tasks/_form.html.haml (4.8ms)
+  Rendered projects/show.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 62ms (Views: 57.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/projects/4/tasks" for 127.0.0.1 at 2017-01-29 23:51:15 -0200
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Nvn0wDb58Sa7NEqy3dcsB9FeMHT7cMUjD1vedc7RDQWUFAmXF+OsnYe8cQ8L5AHdPUizjlGTVP+BuJwNzzTJBg==", "task"=>{"content"=>"asd"}, "commit"=>"Create Task", "project_id"=>"4"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "tasks" ("content", "project_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "asd"], ["project_id", 4], ["created_at", 2017-01-30 01:51:15 UTC], ["updated_at", 2017-01-30 01:51:15 UTC]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/projects/4
+Completed 302 Found in 14ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/projects/4" for 127.0.0.1 at 2017-01-29 23:51:15 -0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered collection of tasks/_task.html.haml [4 times] (5.9ms)
+  Rendered tasks/_form.html.haml (4.3ms)
+  Rendered projects/show.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 92ms (Views: 87.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/projects/4/tasks" for 127.0.0.1 at 2017-01-29 23:51:17 -0200
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CQUhcI/v2Xfo3BWJt4YB8gjpYn58M48qj2k1kU0Lrtyr6NwnrvWEzNRULjRhtSwo5P/hhNbQHvYBinfpTO5q3w==", "task"=>{"content"=>"dd"}, "commit"=>"Create Task", "project_id"=>"4"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "tasks" ("content", "project_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "dd"], ["project_id", 4], ["created_at", 2017-01-30 01:51:17 UTC], ["updated_at", 2017-01-30 01:51:17 UTC]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/projects/4
+Completed 302 Found in 14ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/projects/4" for 127.0.0.1 at 2017-01-29 23:51:17 -0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered collection of tasks/_task.html.haml [5 times] (7.8ms)
+  Rendered tasks/_form.html.haml (6.1ms)
+  Rendered projects/show.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 111ms (Views: 104.8ms | ActiveRecord: 0.7ms)
+
+
