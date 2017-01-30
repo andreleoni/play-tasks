@@ -1,8 +1,7 @@
 .row.clearfix
-
-	.completed
+	.complete
 		= link_to "Mark As Complete", complete_project_task_path(@project, task.id), method: :patch
-	.task
+	.todo_item
 		- if task.completed?
 			%p{style: "opacity: 0.4;"}
 				%strike
