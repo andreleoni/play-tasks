@@ -9,8 +9,6 @@
 *~
 .DS_Store
 /cache/*
-/config/configuration.yml
-/config/database.yml
 /config/private_pub.yml
 /config/smtp.yml
 /config/mongoid.yml
