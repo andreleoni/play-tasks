@@ -1,3 +1,7 @@
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
 /.bundle
 /db/*.sqlite3
 /log/*.log
