@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  namespace :api, defaults: { format: json } do
+    namespace :v0 do
+      
+    end
+  end
+
   resources :projects do
   	resources :tasks do
   		member do
