@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :time_sheets
   namespace :api, defaults: { format: :json } do
     namespace :v0 do
       resources :projects

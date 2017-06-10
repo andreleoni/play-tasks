@@ -12,16 +12,24 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, placeholder: "Título" %>
   </div>
 
   <div class="field">
-    <%= f.label :description %>
-    <%= f.text_area :description %>
+    <%= f.text_area :description, class: "materialize-textarea", placeholder: "Descrição" %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <% if @editing %>
+      <%= button_tag :class => "btn waves-effect waves-light", :type => "submit", :data => { :disable_with => "Editando..." } do %>
+        Editar <i class='material-icons right'> send </i>
+      <% end %>
+    <% else %>
+      <%= button_tag :class => "btn waves-effect waves-light", :type => "submit", :data => { :disable_with => "Criando..." } do %>
+        Criar <i class='material-icons right'> send </i>
+      <% end %>
+    <% end %>
+
+    <%= link_to 'Back', projects_path, class: "btn waves-effect waves-light grey lighten-1" %>
   </div>
 <% end %>

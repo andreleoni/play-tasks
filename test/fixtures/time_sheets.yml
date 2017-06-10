@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hours: 
+  comment: MyText
+  project: one
+  task: one
+
+two:
+  hours: 
+  comment: MyText
+  project: two
+  task: two

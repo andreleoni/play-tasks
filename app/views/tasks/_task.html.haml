@@ -1,14 +1,23 @@
-.row.clearfix
-	.complete
-		= link_to "Mark As Complete", complete_project_task_path(@project, task.id), method: :patch
-	.todo_item
-		- if task.completed?
-			%p{style: "opacity: 0.4;"}
-				%strike
-					= task.content
-		- else
-			%p
-				= task.content
-	.trash
-		= link_to "Delete", project_task_path(@project, task.id), method: "delete", data: { confirm: "Are you sure?" }
-	
+%tr
+  - if task.completed?
+    %td
+      = link_to complete_project_task_path(@project, task.id), method: :patch do
+        %i.material-icons.right{ style: "color: green" }
+          done
+    %td
+      %p{style: "opacity: 0.4;"}
+        = task.content
+  - else
+    %td
+      = link_to complete_project_task_path(@project, task.id), method: :patch do
+        %i.material-icons.right{ style: "color: gray" }
+          done
+
+    %td
+      = task.content
+  %td
+    .trash
+      = link_to project_task_path(@project, task.id), method: "delete", data: { confirm: "Tem certeza que deseja excluir?" } do
+        .btn-floating.red{ style: "width: 40px; height: 40px" }
+          %i.material-icons.right{ style: "color: white;" }
+            delete

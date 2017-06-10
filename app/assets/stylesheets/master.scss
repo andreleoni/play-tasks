@@ -1,0 +1,20 @@
+$light: rgba(100, 150, 250, .75);
+$dark: #eeefef;
+
+.nav-wrapper {
+	background-color: #630bb5;
+}
+
+.page-footer {
+	background-color: #a046f3;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 110px;
+}
+
+.project-mini-dashboard {
+  width: 100%;
+  height: 50px;
+}

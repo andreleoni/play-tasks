@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170130013002) do
+ActiveRecord::Schema.define(version: 20170610170720) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,5 +31,18 @@ ActiveRecord::Schema.define(version: 20170130013002) do
     t.index ["project_id"], name: "index_tasks_on_project_id", using: :btree
   end
 
+  create_table "time_sheets", force: :cascade do |t|
+    t.integer  "hours"
+    t.text     "comment"
+    t.integer  "project_id"
+    t.integer  "task_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["project_id"], name: "index_time_sheets_on_project_id", using: :btree
+    t.index ["task_id"], name: "index_time_sheets_on_task_id", using: :btree
+  end
+
   add_foreign_key "tasks", "projects"
+  add_foreign_key "time_sheets", "projects"
+  add_foreign_key "time_sheets", "tasks"
 end
