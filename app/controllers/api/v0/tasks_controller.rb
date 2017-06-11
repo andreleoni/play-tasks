@@ -1,8 +1,8 @@
 class Api::V0::TasksController < ApplicationController
   protect_from_forgery with: :null_session
 
-  before_action :set_project, expect: [:all_tasks]
-	before_action :set_task, except: [:create, :destroy]
+  before_action :set_project, except: [:all_tasks]
+	before_action :set_task, except: [:create, :destroy, :all_tasks]
 
   def index
     render json: @projects.tasks
