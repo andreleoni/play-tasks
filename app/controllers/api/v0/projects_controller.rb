@@ -11,13 +11,6 @@ class Api::V0::ProjectsController < ApplicationController
     render json: @project
   end
 
-  def new
-    @project = Project.new
-  end
-
-  def edit
-  end
-
   def create
     @project = Project.new(project_params)
 

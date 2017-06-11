@@ -7,14 +7,20 @@ $dark: #eeefef;
 
 .page-footer {
 	background-color: #a046f3;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 110px;
+  margin-top: 50px;
 }
 
 .project-mini-dashboard {
   width: 100%;
   height: 50px;
+}
+
+.new-task-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new-task-form input[type=text] {
+  width: calc(100% - 125px);
 }

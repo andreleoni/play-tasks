@@ -1,28 +1,20 @@
 class TimeSheetsController < ApplicationController
   before_action :set_time_sheet, only: [:show, :edit, :update, :destroy]
 
-  # GET /time_sheets
-  # GET /time_sheets.json
   def index
     @time_sheets = TimeSheet.all
   end
 
-  # GET /time_sheets/1
-  # GET /time_sheets/1.json
   def show
   end
 
-  # GET /time_sheets/new
   def new
     @time_sheet = TimeSheet.new
   end
 
-  # GET /time_sheets/1/edit
   def edit
   end
 
-  # POST /time_sheets
-  # POST /time_sheets.json
   def create
     @time_sheet = TimeSheet.new(time_sheet_params)
 
@@ -37,8 +29,6 @@ class TimeSheetsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /time_sheets/1
-  # PATCH/PUT /time_sheets/1.json
   def update
     respond_to do |format|
       if @time_sheet.update(time_sheet_params)
@@ -51,8 +41,6 @@ class TimeSheetsController < ApplicationController
     end
   end
 
-  # DELETE /time_sheets/1
-  # DELETE /time_sheets/1.json
   def destroy
     @time_sheet.destroy
     respond_to do |format|
@@ -62,12 +50,10 @@ class TimeSheetsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_time_sheet
       @time_sheet = TimeSheet.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def time_sheet_params
       params.require(:time_sheet).permit(:hours, :comment, :project_id, :task_id)
     end
