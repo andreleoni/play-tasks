@@ -1,7 +1,7 @@
 class Api::V0::TasksController < ApplicationController
   protect_from_forgery with: :null_session
 
-  before_action :set_project
+  before_action :set_project, expect: [:all_tasks]
 	before_action :set_task, except: [:create, :destroy]
 
   def index
