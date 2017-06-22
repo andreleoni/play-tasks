@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
     namespace :v0 do
+      get '/' => 'api#api_methods'
       get 'all_tasks' => 'tasks#all_tasks'
       
       resources :time_sheets, except: [:new, :edit]
